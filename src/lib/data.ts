@@ -4,53 +4,52 @@
 
 export const profile = {
   name: "Nishant Agrawal",
-  role: "Software Engineer",
-  tagline: "I design and build fast, delightful web experiences.",
+  role: "Full-Stack Engineer & AI Operations Specialist",
+  tagline: "I build production-grade full-stack systems and agentic AI workflows.",
   blurb:
-    "Full-stack engineer with a soft spot for motion, design systems, and shipping products that feel alive. I turn ambitious ideas into interfaces people love to use.",
-  location: "Bengaluru, India",
-  email: "hello@example.com",
+    "Full-stack engineer and AI operations specialist working across React/Next.js, Django, and FastAPI. I build and deploy agentic AI systems, streamline document-processing pipelines, and craft performant relational databases for high-stakes production environments.",
+  location: "Jodhpur, Rajasthan, India",
+  email: "nishantagrawal2003@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Twitter / X", href: "https://x.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/nishant-agrawal-47b19321a/" },
+    { label: "GitHub", href: "https://github.com/Ash0069" },
   ],
-  resumeHref: "#",
+  resumeHref: "/Nishant-Agrawal-Resume.pdf",
 };
 
 export const stats = [
-  { value: "5+", label: "Years building" },
-  { value: "40+", label: "Projects shipped" },
-  { value: "12", label: "Open-source repos" },
-  { value: "∞", label: "Cups of coffee" },
+  { value: "3+", label: "Years building" },
+  { value: "5", label: "Featured projects" },
+  { value: "35%", label: "Faster processing" },
+  { value: "99%+", label: "Uptime sustained" },
 ];
 
 export const skills = [
+  "Python",
   "TypeScript",
   "React",
   "Next.js",
+  "Django",
+  "FastAPI",
   "Node.js",
-  "Motion",
   "Tailwind CSS",
-  "GraphQL",
   "PostgreSQL",
-  "Framer Motion",
-  "Three.js",
-  "Rust",
-  "Figma",
+  "Redis",
+  "Docker",
+  "AWS",
 ];
 
 // A quick "currently" snapshot for the About bento grid.
 export const now = {
-  building: "A generative-UI playground",
-  reading: "Refactoring UI (again)",
-  listening: "Lo-fi, Bonobo, Tycho",
+  building: "Hunger Platform — an interactive Global Hunger Index & research platform",
+  reading: "System design & production-readiness patterns",
+  listening: "Lo-fi & focus playlists",
 };
 
 export const facts = [
-  "Coffee-fueled",
-  "Open-source contributor",
-  "Design-minded engineer",
+  "AI operations specialist",
+  "Full-stack engineer",
+  "VIT graduate",
   "Remote-friendly",
 ];
 
@@ -58,33 +57,33 @@ export const facts = [
 export const skillGroups = [
   {
     label: "Frontend",
-    items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Motion", "Three.js"],
+    items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "JavaScript"],
   },
   {
     label: "Backend",
-    items: ["Node.js", "GraphQL", "PostgreSQL", "Rust"],
+    items: ["Python", "Django", "FastAPI", "Node.js", "PostgreSQL", "Redis"],
   },
   {
-    label: "Craft",
-    items: ["Figma", "Design Systems", "Accessibility", "Perf"],
+    label: "AI & Infra",
+    items: ["LLM Integration", "Mistral AI", "Docker", "CI/CD", "AWS", "Git"],
   },
 ];
 
 export const services = [
   {
     icon: "◆",
-    title: "Frontend Engineering",
-    body: "Accessible, pixel-precise interfaces in React & Next.js with buttery motion and rock-solid performance.",
+    title: "Full-Stack Engineering",
+    body: "End-to-end web products with React/Next.js front ends and Django or FastAPI back ends, built for high-stakes production environments.",
   },
   {
     icon: "▲",
-    title: "Design Systems",
-    body: "Reusable component libraries and tokens that keep teams shipping consistent UI at speed.",
+    title: "AI Systems & Agent Workflows",
+    body: "Agentic AI systems and scalable agent workflows that automate complex tasks, from LLM integration to document-processing pipelines.",
   },
   {
     icon: "●",
-    title: "Creative Development",
-    body: "Playful, memorable web experiences — animated backgrounds, WebGL, and micro-interactions that delight.",
+    title: "Backend & Infrastructure",
+    body: "Performant PostgreSQL databases, RESTful APIs, and CI/CD pipelines that keep mission-critical workflows fast and reliable.",
   },
 ];
 
@@ -103,40 +102,49 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Nova Analytics",
+    title: "Hunger Platform",
     description:
-      "A real-time dashboard for product teams with live charts, collaborative annotations, and a command palette.",
-    tags: ["Next.js", "WebSockets", "D3"],
+      "An educational and research platform raising awareness about hunger and global food systems — featuring an interactive Global Hunger Index globe, editorial storytelling, a research library, and community/admin tooling.",
+    tags: ["Next.js", "FastAPI", "PostgreSQL", "Docker"],
     href: "#",
-    year: "2025",
-    gradient: ["#7c6cff", "#22d3ee"],
+    year: "WIP · 2026",
+    gradient: ["#f59e0b", "#ef4444"],
     featured: true,
   },
   {
-    title: "Drift Design Kit",
+    title: "Aurexa E-commerce",
     description:
-      "An open-source, themeable component library with 60+ animated primitives and full a11y coverage.",
-    tags: ["React", "Motion", "Storybook"],
+      "A scalable, full-stack e-commerce platform pairing a dynamic Next.js storefront with a Django REST backend and PostgreSQL, deployed with zero-downtime CI/CD across 5 product categories.",
+    tags: ["Next.js", "Django", "PostgreSQL", "GitHub Actions"],
     href: "#",
-    year: "2024",
+    year: "2025",
+    gradient: ["#7c6cff", "#22d3ee"],
+  },
+  {
+    title: "AI Customer Support Dashboard",
+    description:
+      "An AI-powered customer intelligence dashboard with a modular Next.js (TypeScript) front end and a Node.js backend using Mistral AI for automated replies, summaries, and insights, backed by TursoDB.",
+    tags: ["Next.js", "Node.js", "Mistral AI", "TursoDB"],
+    href: "#",
+    year: "2025",
     gradient: ["#22d3ee", "#7c6cff"],
   },
   {
-    title: "Loop Music",
+    title: "DEX",
     description:
-      "A generative-music playground that builds ambient loops in the browser using the Web Audio API.",
-    tags: ["Three.js", "Web Audio", "Rust"],
+      "An academic platform giving professors tools to administer tests, curate student records, and distribute course materials — with responsive UI for scheduling, automated grading, and real-time alerts.",
+    tags: ["Next.js", "Tailwind CSS", "Django"],
     href: "#",
     year: "2024",
     gradient: ["#ff6ac1", "#7c6cff"],
   },
   {
-    title: "Postcard",
+    title: "FastAudit",
     description:
-      "A minimalist blogging platform focused on typography, reading speed, and zero-JS content pages.",
-    tags: ["Next.js", "MDX", "Edge"],
+      "An automated pre-deployment auditing framework that validates Django apps for production readiness — security hardening, environment config, database integrity, CORS policy, and static asset setup.",
+    tags: ["Python", "Django", "DevTools"],
     href: "#",
-    year: "2023",
+    year: "2024",
     gradient: ["#7c6cff", "#ff6ac1"],
   },
 ];
@@ -152,30 +160,30 @@ export type ArchiveItem = {
 
 export const archiveProjects: ArchiveItem[] = [
   {
-    title: "Pulse CLI",
-    year: "2023",
-    role: "Developer tooling",
+    title: "Customs Entry Database",
+    year: "2025",
+    role: "PostgreSQL data platform",
     href: "#",
     gradient: ["#22d3ee", "#0ea5e9"],
   },
   {
-    title: "Vault",
-    year: "2022",
-    role: "Encrypted notes app",
+    title: "FastAPI Operator Tooling",
+    year: "2025",
+    role: "Internal tooling",
     href: "#",
     gradient: ["#7c6cff", "#4338ca"],
   },
   {
-    title: "Mapline",
-    year: "2022",
-    role: "Interactive maps",
+    title: "SMTP Notification Pipeline",
+    year: "2023",
+    role: "Automation",
     href: "#",
     gradient: ["#ff6ac1", "#f43f5e"],
   },
   {
-    title: "Chroma",
-    year: "2021",
-    role: "Color system generator",
+    title: "IACA Mapping & Locking Tool",
+    year: "2023",
+    role: "Internal tooling",
     href: "#",
     gradient: ["#34d399", "#22d3ee"],
   },
@@ -193,39 +201,40 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    role: "Senior Software Engineer",
-    company: "Aurora Labs",
-    period: "2023 — Present",
-    body: "Lead the web platform team, owning the marketing site and core app experience end-to-end.",
-    tags: ["Next.js", "TypeScript", "GraphQL", "Motion"],
+    role: "Operations Manager",
+    company: "Amari AI",
+    period: "Jun 2025 — Present",
+    body: "Oversee AI-driven document-processing pipelines for international customs clearance, keeping high-volume global transactions precise and on time.",
+    tags: ["FastAPI", "PostgreSQL", "AI Ops", "REST APIs"],
     achievements: [
-      "Rebuilt the app shell and cut median load time by 45%.",
-      "Shipped a shared motion + design-token system used by 4 teams.",
-      "Mentored 3 engineers and set the frontend review bar.",
+      "Architected a production-grade FastAPI service that let operations scripts run autonomously, eliminating manual hand-offs.",
+      "Built a centralized PostgreSQL database that accelerated average entry processing time by 35%.",
+      "Sustained 99%+ uptime by remediating AI output anomalies through FastAPI-based operator tooling.",
     ],
     gradient: ["#7c6cff", "#22d3ee"],
   },
   {
-    role: "Software Engineer",
-    company: "Bright Studio",
-    period: "2021 — 2023",
-    body: "Built client products end-to-end — design systems, dashboards, and interactive landing pages for startups.",
-    tags: ["React", "Node.js", "PostgreSQL"],
+    role: "Director of Frontend Development",
+    company: "Raniac",
+    period: "Feb 2025 — Jun 2025",
+    body: "Led a high-performing frontend engineering squad, setting coding standards and acting as the liaison between executive stakeholders and delivery teams.",
+    tags: ["React", "Next.js", "Leadership"],
     achievements: [
-      "Delivered 15+ client projects from Figma to production.",
-      "Created a reusable component kit that halved project setup time.",
+      "Established coding standards and rigorous code reviews across performance, accessibility, and scalability.",
+      "Ran agile sprint planning and workload distribution, consistently hitting release targets without compromising quality.",
     ],
     gradient: ["#22d3ee", "#7c6cff"],
   },
   {
-    role: "Frontend Developer",
-    company: "Freelance",
-    period: "2019 — 2021",
-    body: "Partnered with founders and agencies to ship polished, animated marketing sites and web apps.",
-    tags: ["React", "Tailwind CSS", "GSAP"],
+    role: "Software Engineer Intern",
+    company: "Orange Business Service",
+    period: "Sep 2023 — Dec 2023",
+    body: "Partnered with cross-functional colleagues on the IACA project, revamping internal tooling and API reliability.",
+    tags: ["APIs", "Automation", "Postman"],
     achievements: [
-      "Grew a referral-driven client base to 20+ businesses.",
-      "Specialized in high-conversion, motion-rich landing pages.",
+      "Revamped the customer mapping and locking tool, lifting user engagement and satisfaction by 15%.",
+      "Launched an automated SMTP notification pipeline that cut manual communication overhead by 50%.",
+      "Hardened API reliability with Postman-driven validation, cutting testing cycle time by 25%.",
     ],
     gradient: ["#ff6ac1", "#7c6cff"],
   },

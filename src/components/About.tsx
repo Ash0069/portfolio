@@ -3,6 +3,8 @@ import SectionTitle from "./ui/SectionTitle";
 import SpotlightCard from "./ui/SpotlightCard";
 import CountUp from "./ui/CountUp";
 import TechGrid from "./TechGrid";
+import GitHubActivity from "./GitHubActivity";
+import TechMarquee from "./TechMarquee";
 import { profile, stats, services, facts, now } from "@/lib/data";
 
 export default function About() {
@@ -62,10 +64,9 @@ export default function About() {
         {/* Photo */}
         <Reveal className="sm:col-span-2 lg:col-span-2" delay={0.05}>
           <SpotlightCard className="relative h-full min-h-[260px] overflow-hidden">
-            {/* 👉 Swap /portrait.svg for your real photo (see Showcase.tsx). */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/portrait.svg"
+              src="/photo.jpeg"
               alt={`${profile.name} — portrait`}
               className="absolute inset-0 h-full w-full object-cover"
               draggable={false}
@@ -156,6 +157,17 @@ export default function About() {
             <TechGrid />
           </SpotlightCard>
         </Reveal>
+
+        {/* GitHub activity */}
+        <GitHubActivity />
+      </div>
+
+      {/* Tech marquee */}
+      <div className="mt-12">
+        <p className="mb-6 text-center font-mono text-xs uppercase tracking-widest text-muted">
+          The stack I build with
+        </p>
+        <TechMarquee />
       </div>
     </section>
   );

@@ -7,9 +7,7 @@ export default function Showcase() {
   return (
     <section aria-label="Introduction">
       <ScrollExpand
-        // 👉 Replace with your photo: drop it in /public and point src here,
-        //    e.g. src="/portrait.jpg"
-        src="/portrait.svg"
+        src="/photo.jpeg"
         alt={`${profile.name} — portrait`}
         title={profile.name}
         scrollHint="Scroll to meet me"
